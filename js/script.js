@@ -2,13 +2,13 @@
 x creare variabile età
 x creare variabile tragitto
 x creare variabile e calcolare prezzo del biglietto standard 
-- creare variabile e calcolare prezzo del biglietto scontanto del 20%
-- creare variabile e calcolare prezzo del biglietto scontato del 40%
-- SE l'utente ha meno di 18 anni
+x creare variabile e calcolare prezzo del biglietto scontanto del 20%
+x creare variabile e calcolare prezzo del biglietto scontato del 40%
+x SE l'utente ha meno di 18 anni
     o Prezzo scontanto del 20%
-- ALTRIMENTI SE l'utente ha più di 65 anni
+x ALTRIMENTI SE l'utente ha più di 65 anni
     o Prezzo scontato del 40%
-- ALTRIMENTI prezzo standard
+x ALTRIMENTI prezzo standard
 */
 
 let eta = prompt("Quanti anni hai?");
