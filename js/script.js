@@ -20,7 +20,7 @@ let prezzoScontato40 = ("Il prezzo del tuo biglietto è di ")
 if(età < 18) {
     console.log(prezzoScontato20)
 } else if(età > 65) {
-    console.log(prezzoScontato4s0)
+    console.log(prezzoScontato40)
 } else {
     console.log(prezzoStandard)
 }
