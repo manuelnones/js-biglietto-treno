@@ -11,16 +11,18 @@ x creare variabile e calcolare prezzo del biglietto standard
 - ALTRIMENTI prezzo standard
 */
 
-let età = prompt("Quanti anni hai?");
+let eta = prompt("Quanti anni hai?");
 let tragitto = prompt("Quanti km vuoi percorrere?");
-let prezzoStandard = ("Il prezzo del tuo biglietto è di ") + (0.21 * tragitto) + ("\u20AC");
-let prezzoScontato20 = ("Il prezzo del tuo biglietto è di ") + (prezzoStandard - (prezzoStandard - 20 / 100));
-let prezzoScontato40 = ("Il prezzo del tuo biglietto è di ") 
+let prezzoStandard = 0.21 * tragitto;
+let prezzoScontato20 = (prezzoStandard - (prezzoStandard * 20 / 100));
+let prezzoMinorenni = prezzoScontato20.toFixed(2);
+let prezzoScontato40 = (prezzoStandard - (prezzoStandard * 40 / 100));
+let prezzoOver65 = prezzoScontato40.toFixed(2);
 
-if(età < 18) {
-    console.log(prezzoScontato20)
-} else if(età > 65) {
-    console.log(prezzoScontato40)
+if (eta < 18) {
+    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoMinorenni) + ("\u20AC"))
+} else if (eta > 65) {
+    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoOver65) + ("\u20AC"))
 } else {
-    console.log(prezzoStandard)
+    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoStandard) + ("\u20AC"))
 }
