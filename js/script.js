@@ -20,9 +20,9 @@ let prezzoScontato40 = (prezzoStandard - (prezzoStandard * 40 / 100));
 let prezzoOver65 = prezzoScontato40.toFixed(2);
 
 if (eta < 18) {
-    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoMinorenni) + ("\u20AC"))
+    document.writeln(("Il prezzo del tuo biglietto è di ") + (prezzoMinorenni) + ("\u20AC"))
 } else if (eta > 65) {
-    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoOver65) + ("\u20AC"))
+    document.writeln(("Il prezzo del tuo biglietto è di ") + (prezzoOver65) + ("\u20AC"))
 } else {
-    console.log(("Il prezzo del tuo biglietto è di ") + (prezzoStandard) + ("\u20AC"))
+    document.writeln(("Il prezzo del tuo biglietto è di ") + (prezzoStandard) + ("\u20AC"))
 }
